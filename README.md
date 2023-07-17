@@ -1,2 +1,2 @@
 # Code Editor
- Mini-project of a code editor made in HTML, CSS and JavaScript with syntax highlighting feature.
+Mini-project of a very simple live code editor made in HTML, CSS and JavaScript.

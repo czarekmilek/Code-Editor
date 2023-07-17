@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Code Editor | Cezary Miłek</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edhe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/public/css/style.css">
+        <link rel="stylesheet" href="/public/css/prism.css">
+    </head>
+
+    <body>
+        <div class="code-editor">
+            <div class="code">
+                <div class="html-code">
+                    <h1><img src="/public/images/html.png" alt="">HTML</h1>
+                    <textarea id="html-code-input"></textarea>
+                </div>
+                <div class="css-code">
+                    <h1><img src="/public/images/css.png" alt="">CSS</h1>
+                    <textarea id="css-code-input"></textarea>
+                </div>
+                <div class="js-code">
+                    <h1><img src="/public/images/js.png" alt="">JavaScript</h1>
+                    <textarea spellcheck="false" id="js-code-input"></textarea>
+                </div>
+            </div>
+            <iframe id="result"></iframe>
+        </div>
+        
+
+        <script src="/public/js/script.js"></script>
+        <script src="/public/js/prism.js"></script>
+    </body>
+</html>

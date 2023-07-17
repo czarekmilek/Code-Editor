@@ -1,0 +1,78 @@
+:root {
+    --firstcolor:      rgb(0, 0, 129);
+    --secondcolor:     rgb(228, 129, 146);
+    --thirdcolor:      rgb(109, 25, 109);
+}
+
+* {
+    margin:             0;
+    padding:            0;
+    box-sizing:         border-box;
+}
+
+body {
+    height:             100vh;
+    font-family:        sans-serif;
+    background-image:   linear-gradient(45deg, var(--firstcolor), var(--thirdcolor));
+
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+}
+
+.code-editor {
+    width:              90vw;
+    height:             90vh;
+
+    display:                grid;
+    grid-template-columns:  repeat(2, 1fr);
+    background-color:       whitesmoke;
+    border-radius:          3rem;
+    overflow:               hidden;
+}
+
+.code {
+    display:                grid;
+    grid-template-rows:     repeat(3, 1fr);
+    background-color:       var(--firstcolor);
+    padding:                1rem;
+    border-radius:          0 1rem 1rem 0;
+}
+
+h1 {
+    font:                   700 1.2rem sans-serif;
+    margin:                 1rem 0;
+    color:                  #fff;
+}
+
+h1 > img {
+    width:                  1.7rem;
+    margin-right:           1.3rem;
+    vertical-align:         middle;
+}
+
+.code textarea {
+    width:                  100%;
+    height:                 calc(100% - 4rem);
+    background-color:       var(--thirdcolor);
+    color:                  #fff;
+    border:                 none;
+    padding:                1rem;
+    font-size:              1rem;
+    resize:                 vertical;
+}
+
+.code textarea::-webkit-scrollbar {
+    width:                  0.4rem;
+}
+
+.code textarea::-webkit-scrollbar-thumb {
+    background-color:      var(--secondcolor);
+    border-radius:          1.4rem;
+}
+
+#result {
+    width:                  100%;
+    height:                 100%;
+    border:                 none;
+}
